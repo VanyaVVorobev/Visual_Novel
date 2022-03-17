@@ -1,0 +1,122 @@
+[
+  {
+    "image": "menu_with_kirjysha",
+    "buttons": [
+      {"first": {
+        "text": "firstButtonRu_secondScreen",
+        "nextScreen": 1
+      }},
+      {"second": {
+        "text": "secondButtonRu_secondScreen",
+        "nextScreen": 2
+      }},
+      {"third": {
+        "text": "thirdButtonRu_secondScreen",
+        "nextScreen": 3
+      }}]
+  },
+  {
+    "image": "jogging",
+    "buttons": [
+      {"second": {
+        "text": "secondButtonRu_thirdScreen",
+        "nextScreen": 4
+      }},
+      {"third": {
+        "text": "thirdButtonRu_thirdScreen",
+        "nextScreen": 5
+      }}]
+  },
+  {
+    "image": "camping",
+    "buttons": [
+      {"second": {
+        "text": "secondButtonRu_fourthScreen",
+        "nextScreen": 4
+      }},
+      {"third": {
+        "text": "thirdButtonRu_fourthScreen",
+        "nextScreen": 5
+      }}]
+  },
+  {
+    "image": "plant",
+    "buttons": [
+      {"second": {
+        "text": "secondButtonRu_fifthScreen",
+        "nextScreen": 4
+      }},
+      {"third": {
+        "text": "thirdButtonRu_fifthScreen",
+        "nextScreen": 5
+      }}]
+  },
+  {
+    "image": "film",
+    "buttons": [
+      {"second": {
+        "text": "secondButtonRu_sixthScreen",
+        "nextScreen": 6
+      }},
+      {"third": {
+        "text": "thirdButtonRu_sixthScreen",
+        "nextScreen": 7
+      }}]
+  },
+  {
+    "image": "halloween",
+    "buttons": [
+      {"second": {
+        "text": "secondButtonRu_seventhScreen",
+        "nextScreen": 5
+      }},
+      {"third": {
+        "text": "thirdButtonRu_seventhScreen",
+        "nextScreen": 8
+      }}]
+  },
+  {
+    "image": "film",
+    "buttons": [
+      {"second": {
+        "text": "secondButtonRu_eighthScreen",
+        "nextScreen": 11
+      }}]
+  },
+  {
+    "image": "film",
+    "buttons": [
+      {"second": {
+        "text": "secondButtonRu_ninthScreen",
+        "nextScreen": 11
+      }}]
+  },
+  {
+    "image": "costume",
+    "buttons": [
+      {"second": {
+        "text": "secondButtonRu_tenthScreen",
+        "nextScreen": 9
+      }},
+      {"third": {
+        "text": "thirdButtonRu_tenthScreen",
+        "nextScreen": 10
+      }}]
+  },
+  {
+    "image": "costume",
+    "buttons": [
+      {"second": {
+        "text": "secondButtonRu_eleventhScreen",
+        "nextScreen": 11
+      }}]
+  },
+  {
+    "image": "costume",
+    "buttons": [
+      {"second": {
+        "text": "secondButtonRu_twelfthScreen",
+        "nextScreen": 11
+      }}]
+  }
+]

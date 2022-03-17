@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Visual Novel</string>
+
+    <string name="textRU_mainMenu">Моя визуальная новелла</string>
+    <string name="ButtonRU_mainMenu">Начать</string>
+
+
+    <string name="textRU_firstScreen">Привет! Меня зовут Кирюша. А тебя?</string>
+    <string name="dataTextRU_firstScreen">Введите свое имя…</string>
+    <string name="buttonRU_firstScreen">Подтвердить</string>
+
+
+    <string name="firstButtonRU_secondScreen">Пойдем на пробежку</string>
+    <string name="secondButtonRU_secondScreen">Пойдем в поход</string>
+    <string name="thirdButtonRU_secondScreen">Пойдем по полю</string>
+
+
+    <string name="textRU_thirdScreen">Может, пойдем домой?..</string>
+
+    <string name="secondButtonRU_thirdScreen">Да, и посмотрим фильм</string>
+    <string name="thirdButtonRU_thirdScreen">Да, и отпразнуем хеллоуин</string>
+
+
+    <string name="textRU_fourthScreen">Как уютно… Но уже темнеет</string>
+
+    <string name="secondButtonRU_fourthScreen">Пойдем домой и посмотрим фильм</string>
+    <string name="thirdButtonRU_fourthScreen">Пойдем домой и отпразднуем хеллоуин</string>
+
+
+    <string name="textRU_fifthScreen">Тебе грустно… Пойдем домой?</string>
+
+    <string name="secondButtonRU_fifthScreen">Может, посмотрим фильм?</string>
+    <string name="thirdButtonRU_fifthScreen">Да, отпразднуем хеллоуин</string>
+
+
+    <string name="textRU_sixthScreen">Как тебе фильм?</string>
+
+    <string name="secondButtonRU_sixthScreen">Мне понравился!</string>
+    <string name="thirdButtonRU_sixthScreen">Не очень…</string>
+
+
+    <string name="textRU_seventhScreen">Получается очень красиво!</string>
+
+    <string name="secondButtonRU_seventhScreen">Да! Может, посмотрим фильм?</string>
+    <string name="thirdButtonRU_seventhScreen">Да! Давай сделаем костюмы!</string>
+
+
+    <string name="textRU_eighthScreen">Отлично! А теперь пора спать…</string>
+
+    <string name="secondButtonRU_eighthScreen">Да, уже Поздно…</string>
+
+
+
+    <string name="textRU_ninthScreen">Жаль… Тогда пойдем спать?</string>
+
+    <string name="secondButtonRU_ninthScreen">Да, уже поздно…</string>
+
+
+
+    <string name="textRU_tenthScreen">Мне нарвится твой костюм.</string>
+
+    <string name="secondButtonRU_tenthScreen">Твой тоже очень красивый!</string>
+    <string name="thirdButtonRU_tenthScreen">А мне, если честно, не нравится твой…</string>
+
+
+    <string name="textRU_eleventhScreen">Спасибо! Ну, пойдем спать?</string>
+
+    <string name="secondButtonRU_eleventhScreen">Да, уже поздно</string>
+
+
+
+    <string name="textRU_tvelfthScreen">Ничего, я не в обиде. Пойдем Спать?</string>
+
+    <string name="secondButtonRU_twelfthScreen">Да, уже поздно…</string>
+
+
+
+    <string name="textRU_endMenu">Спасибо, что поиграли!</string>
+    <string name="buttonRU_endMenu">Пройти еще раз</string>
+    <string name="todo">TODO</string>
+</resources>
