@@ -2,6 +2,7 @@ package com.example.visualnovel
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.visualnovel.databinding.ActivityGreetingBinding
 
@@ -14,9 +15,10 @@ class GreetingActivity: AppCompatActivity() {
 
         val myButton = binding.button
         myButton.setOnClickListener {
-            intent.putExtra(USERNAME_KEY, binding.getUsername.text.toString())
             intent = Intent(this, GameActivity::class.java)
+            intent.putExtra(USERNAME_KEY, binding.getUsername.text.toString())
             startActivity(intent)
+            finish()
         }
     }
 }

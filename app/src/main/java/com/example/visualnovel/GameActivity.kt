@@ -22,20 +22,21 @@ class GameActivity: AppCompatActivity() {
         gameLogic = ActivityGameLogic(context)
 
         updateScreen()
-        binding.firstButton.setOnClickListener { onClick(1) }
-        binding.secondButton.setOnClickListener { onClick(2) }
-        binding.thirdButton.setOnClickListener { onClick(3) }
+        binding.firstButton.setOnClickListener { onClickButton(1) }
+        binding.secondButton.setOnClickListener { onClickButton(2) }
+        binding.thirdButton.setOnClickListener { onClickButton(3) }
     }
 
-    private fun onClick(clickedButtonNumber: Int) {
+    private fun onClickButton(clickedButtonNumber: Int) {
+        current = updateCurrent(clickedButtonNumber)
         if(current == ID_LAST_GAME_SCREEN) {
-            intent = Intent(this, GameActivity::class.java)
+            intent = Intent(this, EndMenuActivity::class.java)
             startActivity(intent)
+            finish()
         }
         else
         {
             updateScreen()
-            current = updateCurrent(clickedButtonNumber)
         }
     }
 

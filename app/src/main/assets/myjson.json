@@ -86,7 +86,7 @@
     "buttons": [
       {
           "text": "Да! Может, посмотрим фильм?",
-          "nextScreen": 5
+          "nextScreen": 4
 
       },
       {
