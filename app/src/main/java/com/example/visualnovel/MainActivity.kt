@@ -5,8 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.visualnovel.databinding.ActivityMainBinding
 
-const val CURRENT_GAME_ACTIVITY_KEY = "com.example.visualnovel.current"
 const val USERNAME_KEY = "com.example.visualnovel.username"
+const val ID_FIRST_GAME_SCREEN = 0
+const val ID_LAST_GAME_SCREEN = 11
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

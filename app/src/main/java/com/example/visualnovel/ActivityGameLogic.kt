@@ -1,50 +1,33 @@
 package com.example.visualnovel
 
 import android.content.Context
-import org.json.JSONArray
-import org.json.JSONTokener
+import android.util.Log
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.json.Json
 
 class ActivityGameLogic(context: Context) {
-    val myJson = context.resources.assets.open("myjson.json").bufferedReader().use { it.readText() }
-    val jsonArray = JSONTokener(myJson).nextValue() as JSONArray
+    private val dataGame: List<DataGame>
 
-    fun getCurrentImage(current: Int): String {
-        val jsonObject = jsonArray.getJSONObject(current)
-        return jsonObject.getString("image")
-    }
-
-    fun  getCurrentText(current: Int): String {
-        val jsonObject = jsonArray.getJSONObject(current)
-        return jsonObject.getString("text")
+    init {
+        val myJsonStr = context.resources.assets.open(
+            "myjson.json").bufferedReader().use { it.readText() }
+        Log.e("JSON",myJsonStr)
+        dataGame= Json.decodeFromString(myJsonStr)
     }
 
-    fun getCountButton(current: Int):Int {
-        return jsonArray.getJSONObject(current).getJSONArray("buttons").length()
-    }
+    fun getCurrentImage(current: Int) = dataGame[current].image
+    fun  getCurrentText(current: Int) = dataGame[current].text
+    fun getCountButton(current: Int) = dataGame[current].countButtons
+    fun getButtonText(current: Int, buttonsNumber: Int) = dataGame[current].buttons[buttonsNumber - 1].text
 
-    fun getSecondButtonText(current: Int):String {
-        return jsonArray.getJSONObject(current).getJSONArray("buttons").getString(1)
-    }
-    fun getThirdButtonText(current: Int):String {
-        return jsonArray.getJSONObject(current).getJSONArray("buttons").getString(2)
-    }
-    fun getFirstButtonText(current: Int):String {
-        return jsonArray.getJSONObject(current).getJSONArray("buttons").getString(1)
-    }
 
     fun getNextIdScreen(current: Int, clickedButtonNumber: Int): Int {
-        val jsonObject = jsonArray.getJSONObject(current)
         if(clickedButtonNumber == 1) {
-            return jsonObject.getJSONArray("firstButton").getInt(2)
+            return dataGame[current].buttons[2].nextScreen
         }
         if(clickedButtonNumber == 2) {
-            return jsonObject.getJSONArray("secondButton").getInt(2)
+            return dataGame[current].buttons[0].nextScreen
         }
-        if(clickedButtonNumber == 3) {
-            return jsonObject.getJSONArray("thirdButton").getInt(2)
-        }
-        return 0
+        return dataGame[current].buttons[1].nextScreen
     }
-
-
 }

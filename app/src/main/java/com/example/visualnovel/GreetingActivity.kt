@@ -14,7 +14,6 @@ class GreetingActivity: AppCompatActivity() {
 
         val myButton = binding.button
         myButton.setOnClickListener {
-            intent.putExtra(CURRENT_GAME_ACTIVITY_KEY, 0)
             intent.putExtra(USERNAME_KEY, binding.getUsername.text.toString())
             intent = Intent(this, GameActivity::class.java)
             startActivity(intent)

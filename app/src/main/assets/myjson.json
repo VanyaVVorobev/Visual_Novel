@@ -1,122 +1,158 @@
 [
   {
     "image": "menu_with_kirjysha",
+    "countButtons": 3,
+    "text": "Hello, World",
     "buttons": [
-      {"first": {
-        "text": "firstButtonRu_secondScreen",
-        "nextScreen": 1
-      }},
-      {"second": {
-        "text": "secondButtonRu_secondScreen",
-        "nextScreen": 2
-      }},
-      {"third": {
-        "text": "thirdButtonRu_secondScreen",
-        "nextScreen": 3
-      }}]
+        {
+          "text": "Пойдем в поход",
+          "nextScreen": 2
+      },
+      {
+          "text": "Пойдем по полю",
+          "nextScreen": 3
+      },
+      {
+          "text": "Пойдем на пробежку",
+          "nextScreen": 1
+      }
+    ]
   },
   {
     "image": "jogging",
+    "text": "Может, пойдем домой?..",
+    "countButtons": 2,
     "buttons": [
-      {"second": {
-        "text": "secondButtonRu_thirdScreen",
-        "nextScreen": 4
-      }},
-      {"third": {
-        "text": "thirdButtonRu_thirdScreen",
-        "nextScreen": 5
-      }}]
+      {
+          "text": "Да, и посмотрим фильм",
+          "nextScreen": 4
+      },
+      {
+          "text": "Да, и отпразнуем хеллоуин",
+          "nextScreen": 5
+      }
+    ]
   },
   {
     "image": "camping",
+    "text": "Как уютно… Но уже темнеет",
+    "countButtons": 2,
     "buttons": [
-      {"second": {
-        "text": "secondButtonRu_fourthScreen",
-        "nextScreen": 4
-      }},
-      {"third": {
-        "text": "thirdButtonRu_fourthScreen",
-        "nextScreen": 5
-      }}]
+      {
+          "text": "Пойдем домой и посмотрим фильм",
+          "nextScreen": 4
+      },
+      {
+          "text": "Пойдем домой и отпразднуем хеллоуин",
+          "nextScreen": 5
+      }
+    ]
   },
   {
     "image": "plant",
+    "text": "Тебе грустно… Пойдем домой?",
+    "countButtons": 2,
     "buttons": [
-      {"second": {
-        "text": "secondButtonRu_fifthScreen",
-        "nextScreen": 4
-      }},
-      {"third": {
-        "text": "thirdButtonRu_fifthScreen",
-        "nextScreen": 5
-      }}]
+      {
+          "text": "Может, посмотрим фильм?",
+          "nextScreen": 4
+
+      },
+      {
+          "text": "Да, отпразднуем хеллоуин",
+          "nextScreen": 5
+      }
+    ]
   },
   {
     "image": "film",
+    "text": "Как тебе фильм?",
+    "countButtons": 2,
     "buttons": [
-      {"second": {
-        "text": "secondButtonRu_sixthScreen",
-        "nextScreen": 6
-      }},
-      {"third": {
-        "text": "thirdButtonRu_sixthScreen",
-        "nextScreen": 7
-      }}]
+      {
+          "text": "Мне понравился!",
+          "nextScreen": 6
+      },
+      {
+          "text": "Не очень…",
+          "nextScreen": 7
+      }
+    ]
   },
   {
     "image": "halloween",
+    "text": "Получается очень красиво!",
+    "countButtons": 2,
     "buttons": [
-      {"second": {
-        "text": "secondButtonRu_seventhScreen",
-        "nextScreen": 5
-      }},
-      {"third": {
-        "text": "thirdButtonRu_seventhScreen",
-        "nextScreen": 8
-      }}]
+      {
+          "text": "Да! Может, посмотрим фильм?",
+          "nextScreen": 5
+
+      },
+      {
+          "text": "Да! Давай сделаем костюмы!",
+          "nextScreen": 8
+      }
+    ]
   },
   {
     "image": "film",
+    "text": "Отлично! А теперь пора спать…",
+    "countButtons": 1,
     "buttons": [
-      {"second": {
-        "text": "secondButtonRu_eighthScreen",
-        "nextScreen": 11
-      }}]
+      {
+          "text": "Да, уже Поздно…",
+          "nextScreen": 11
+        }
+    ]
   },
   {
     "image": "film",
+    "text": "Жаль… Тогда пойдем спать?",
+    "countButtons": 1,
     "buttons": [
-      {"second": {
-        "text": "secondButtonRu_ninthScreen",
-        "nextScreen": 11
-      }}]
+      {
+          "text": "Да, уже поздно…",
+          "nextScreen": 11
+      }
+    ]
   },
   {
     "image": "costume",
+    "text": "Мне нарвится твой костюм.",
+    "countButtons": 2,
     "buttons": [
-      {"second": {
-        "text": "secondButtonRu_tenthScreen",
-        "nextScreen": 9
-      }},
-      {"third": {
-        "text": "thirdButtonRu_tenthScreen",
-        "nextScreen": 10
-      }}]
+      {
+          "text": "Твой тоже очень красивый!",
+          "nextScreen": 9
+      },
+      {
+          "text": "А мне, если честно, не нравится твой…",
+          "nextScreen": 10
+      }
+    ]
   },
   {
     "image": "costume",
+    "text": "Спасибо! Ну, пойдем спать?",
+    "countButtons": 1,
     "buttons": [
-      {"second": {
-        "text": "secondButtonRu_eleventhScreen",
-        "nextScreen": 11
-      }}]
+      {
+          "text": "Да, уже поздно",
+          "nextScreen": 11
+      }
+    ]
   },
   {
     "image": "costume",
+    "text": "Ничего, я не в обиде. Пойдем Спать?",
+    "countButtons": 1,
     "buttons": [
-      {"second": {
-        "text": "secondButtonRu_twelfthScreen",
-        "nextScreen": 11
-      }}]
+      {
+          "text": "Да, уже поздно…",
+          "nextScreen": 11
+
+      }
+    ]
   }
-]
+ ]
