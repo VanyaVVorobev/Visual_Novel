@@ -1,8 +1,7 @@
-package com.example.visualnovel
+package com.example.visualnovel.view
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.visualnovel.databinding.ActivityGreetingBinding
 

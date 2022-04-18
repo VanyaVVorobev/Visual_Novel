@@ -1,17 +1,19 @@
-package com.example.visualnovel
+package com.example.visualnovel.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.visualnovel.databinding.ActivityGameBinding
-
+import com.example.visualnovel.model.ActivityGameLogic
 
 
 class GameActivity: AppCompatActivity() {
     private lateinit var binding: ActivityGameBinding
     private lateinit var gameLogic: ActivityGameLogic
-    private var  current = ID_FIRST_GAME_SCREEN
+    private var current = ID_FIRST_GAME_SCREEN
+    private var buttons: MutableList<Button> = mutableListOf()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,10 +23,14 @@ class GameActivity: AppCompatActivity() {
         val context = this
         gameLogic = ActivityGameLogic(context)
 
+        buttons.add(binding.secondButton)
+        buttons[0].setOnClickListener { onClickButton(2) }
+        buttons.add(binding.thirdButton)
+        buttons[1].setOnClickListener { onClickButton(3) }
+        buttons.add(binding.firstButton)
+        buttons[2].setOnClickListener { onClickButton(1) }
+
         updateScreen()
-        binding.firstButton.setOnClickListener { onClickButton(1) }
-        binding.secondButton.setOnClickListener { onClickButton(2) }
-        binding.thirdButton.setOnClickListener { onClickButton(3) }
     }
 
     private fun onClickButton(clickedButtonNumber: Int) {
@@ -53,8 +59,14 @@ class GameActivity: AppCompatActivity() {
 
     private fun updateText() {
         if(current == ID_FIRST_GAME_SCREEN) {
-            val buff = "Отлично, ${intent.getStringExtra(USERNAME_KEY)}! Чем займемся?"
-            binding.textView.text =buff
+            var buff = binding.textView.text.toString()
+            val regex = Regex("<.*>")
+            val matchResult = regex.find(buff)
+            if(matchResult != null) {
+                buff = buff.replaceRange(matchResult.range.first,
+                    matchResult.range.last+1, intent.getStringExtra(USERNAME_KEY).toString())
+            }
+            binding.textView.text = buff
         }
         else {
             binding.textView.text=gameLogic.getCurrentText(current)
@@ -62,22 +74,13 @@ class GameActivity: AppCompatActivity() {
     }
 
     private fun updateButtons() {
-        val countButton = gameLogic.getCountButton(current)
-        binding.secondButton.text=gameLogic.getButtonText(current, 1)
-
-        if(countButton>1){
-            binding.thirdButton.text=gameLogic.getButtonText(current, 2)
-        }
-        else {
-            binding.thirdButton.visibility = View.INVISIBLE
-            binding.firstButton.visibility = View.INVISIBLE
-        }
-
-        if(countButton>2) {
-            binding.firstButton.text=gameLogic.getButtonText(current, 3)
-        }
-        else {
-            binding.firstButton.visibility = View.INVISIBLE
+        val countButtons = gameLogic.getCountButton(current)
+        for(i in 1..buttons.size) {
+            if (countButtons >= i) {
+                buttons[i - 1].text = gameLogic.getButtonText(current, i)
+            } else {
+                buttons[i - 1].visibility = View.INVISIBLE
+            }
         }
     }
 
