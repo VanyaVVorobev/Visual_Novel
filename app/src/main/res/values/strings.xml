@@ -9,6 +9,9 @@
     <string name="dataTextRU_firstScreen">Введите свое имя…</string>
     <string name="buttonRU_firstScreen">Подтвердить</string>
 
+
+    <string name="dataTextRU_helloUsername">"Отлично, &lt;username&gt;! Чем займемся?"</string>
+
     <string name="textRU_endMenu">Спасибо, что поиграли!</string>
     <string name="buttonRU_endMenu">Пройти еще раз</string>
     <string name="todo">TODO</string>

@@ -1,8 +1,9 @@
-package com.example.visualnovel
+package com.example.visualnovel.view
 
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.visualnovel.R
 
 class EndMenuActivity: AppCompatActivity() {
 

@@ -1,7 +1,8 @@
-package com.example.visualnovel
+package com.example.visualnovel.model
 
 import android.content.Context
 import android.util.Log
+import com.example.visualnovel.view.JSON_FILE_NAME
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 
@@ -10,8 +11,7 @@ class ActivityGameLogic(context: Context) {
 
     init {
         val myJsonStr = context.resources.assets.open(
-            "myjson.json").bufferedReader().use { it.readText() }
-        Log.e("JSON",myJsonStr)
+            JSON_FILE_NAME).bufferedReader().use { it.readText() }
         dataGame= Json.decodeFromString(myJsonStr)
     }
 

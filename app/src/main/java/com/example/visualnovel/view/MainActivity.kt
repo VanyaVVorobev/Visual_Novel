@@ -1,4 +1,4 @@
-package com.example.visualnovel
+package com.example.visualnovel.view
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +8,7 @@ import com.example.visualnovel.databinding.ActivityMainBinding
 const val USERNAME_KEY = "com.example.visualnovel.username"
 const val ID_FIRST_GAME_SCREEN = 0
 const val ID_LAST_GAME_SCREEN = 11
+const val JSON_FILE_NAME = "myjson.json"
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding

@@ -1,4 +1,4 @@
-package com.example.visualnovel
+package com.example.visualnovel.model
 
 import kotlinx.serialization.Serializable
 
